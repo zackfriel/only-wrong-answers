@@ -29,11 +29,15 @@
 .typing-indicator span {
   height: 10px;
   width: 10px;
-  background-color: #3b82f6; /* blue-500 */
   border-radius: 50%;
   display: inline-block;
   margin-right: 4px;
   animation: bounce 1.3s linear infinite;
+  background-color: #3b82f6; /* blue-500 for light mode */
+}
+
+.dark .typing-indicator span {
+  background-color: #60a5fa; /* blue-400 for dark mode */
 }
 
 .typing-indicator span:nth-child(2) {

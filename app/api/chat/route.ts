@@ -14,10 +14,10 @@ export async function POST(req: Request) {
   const augmentedMessages = [{ role: "system", content: SYSTEM_MESSAGE }, ...messages]
 
   const result = streamText({
-    model: openai("gpt-3.5-turbo"),
+    model: openai("gpt-4o-mini"),
     messages: augmentedMessages,
     temperature: 0.9, // Increase temperature for more creative (and potentially incorrect) responses
-    maxTokens: 150, // Limit response length to avoid long, potentially correct explanations
+    max_tokens: 150, // Limit response length to avoid long, potentially correct explanations
   })
 
   return result.toDataStreamResponse()

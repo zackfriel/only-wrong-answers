@@ -3,7 +3,6 @@ import "./globals.css"
 import type { Metadata } from "next"
 import { Comic_Neue } from "next/font/google"
 
-// We're using Comic Neue, a more modern version of Comic Sans
 const comicNeue = Comic_Neue({
   weight: ["300", "400", "700"],
   subsets: ["latin"],
@@ -12,7 +11,7 @@ const comicNeue = Comic_Neue({
 
 export const metadata: Metadata = {
   title: "AI Chatbot",
-  description: "A playful AI-powered chatbot",
+  description: "A playful AI-powered chatbot with dark mode",
 }
 
 export default function RootLayout({
