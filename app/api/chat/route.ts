@@ -17,7 +17,7 @@ export async function POST(req: Request) {
     model: openai("gpt-4o-mini"),
     messages: augmentedMessages,
     temperature: 0.9, // Increase temperature for more creative (and potentially incorrect) responses
-    max_tokens: 150, // Limit response length to avoid long, potentially correct explanations
+    maxTokens: 150, // Limit response length to avoid long, potentially correct explanations
   })
 
   return result.toDataStreamResponse()
