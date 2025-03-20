@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useState, useRef, useEffect } from "react"
-import { useChat } from "ai/react"
+import { useChat } from "@ai-sdk/react"   
 import { Send, Bot, User, Maximize2, Minimize2, AlertTriangle, Sun, Moon } from "lucide-react"
 
 export default function Chat() {
